@@ -15,7 +15,7 @@ if (delta < 0) {
     let x = -(b/(2*a));
     document.write("phuong trinh co nghiem kep:" + x);
 }else{
-    let x1 = -(b - Math.sprt(delta)/(2*a));
-    let x2 = -(b+ Math.sprt(delta))/(2*x);
+    let x1 = -(b - Math.sqrt(delta)/(2*a));
+    let x2 = -(b+ Math.sqrt(delta))/(2*x);
     document.write("phuong trinh in ra ket qua:"+ x1 + x2);
 }

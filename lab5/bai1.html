@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body >
+    <div class="background">
+    <div class="main">
+    <h3>TODO LIST</h3><br>
+    <a > tên task:</a><br>
+    <input id="a"   class="ten" name="a"  ><br>
+    <a > Mô tả :</a><br>
+    <input  id="b"  class="mota"  name="b"><br>
+    <br>
+    <div class="nut">
+    <button class="nut2" onclick="display()" type="button" >lưu</button>
+</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a >tên cách task</a>
+     
+    </div>
+    <div class="demo2">
+    <h4 class="ra" id="demo"  >         </h4 >  
+    </div>
+</div>
+
+<script>
+    function display(){
+        var a = document.getElementById("a").value;
+        var b = document.getElementById("b").value;
+      
+      var c = document.getElementById("demo").innerText = a+ Array(50).fill('\xa0').join('')  +b  ;
+        c.innerText = 
+        <div class="list-wrap">
+        
+            <div class="list-wrap-btn">
+                <button onclick="update()" class="btn-edit">Edit</button>
+                <button onclick="xoa()" class="btn-delete">Delete</button>
+            </div>
+        </div>
+            ;
+
+       
+        
+   
+    }
+    function xoa() {
+       var c = document.getElementById("demo")
+        c.remove();
+    }
+    function update(){
+        var a = alert( document.getElementById("a").value);
+        var b = alert( document.getElementById("b").value);
+      
+      var c =document.getElementById("demo").innerText = a+ Array(50).fill('\xa0').join('')  +b  ;
+        c.innerText = 
+        <div class="list-wrap">
+        
+            <div class="list-wrap-btn">
+                <button onclick="update()" class="btn-edit">Edit</button>
+                <button onclick="xoa()" class="btn-delete">Delete</button>
+            </div>
+        </div>
+    }
+
+    
+</script>
+</body> 
+</html>

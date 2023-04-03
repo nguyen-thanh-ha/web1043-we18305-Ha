@@ -1,0 +1,34 @@
+.background{
+    text-align: center;
+    background-color: aqua;
+   padding: 50px;
+    width: 50%;
+    margin-left: 300px;
+    margin-top: 50px;
+    
+    text-shadow: 500px black;
+}
+
+.ten{
+    width: 700px;
+}
+.mota{
+    width: 700px;
+    height: 80px;
+}
+a{
+    display: flex;
+    right: 50px;
+}
+.nut{
+    
+    float: right;
+}
+.nut2{
+    height: 50px;
+    width: 100px;
+}
+.ra{
+    float: left;
+}
+
