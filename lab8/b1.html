@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Video player</title>
+</head>
+<link rel="stylesheet" href="./css.css">
+<body>
+    
+    <div class="comneuti">
+        <p class="connityon"> Video Music </p>
+    <video id="video" class="video"  src="video/JVKE - golden hour (official music video).mp4"></video>
+    <div class="button">
+        <button onclick="play()">play/pause</button>
+        <button onclick = "stop()">stop</button>
+        <button onclick = "replay()">replay</button>
+        <button onclick = "tang()">volume(+)</button>
+         <button onclick = "giam()">volume(-)</button>
+         <button onclick = "mutevolume()">mute/unmute</button>
+    </div>
+</div>
+</body>
+<script>
+    let video = document.getElementById("video");
+     function play(){
+        video.play();
+     }
+     function pause(){ 
+            video.paused();
+        }
+    
+     function stop(){
+        video.pause();
+        if(video.currentTime){
+            video.currentTime = 0;
+        }
+
+     }
+     function replay(){
+        video.currentTime = 0;
+        video.play();
+
+     }
+     function tang(){
+        if (video.volume <1) {
+            video.volume = parseFloat(video.volume + 0.1).toFixed(1);
+            
+        }
+     }
+     function giam(){
+        if (video.volume >1) {
+            video.volume = parseFloat(video.volume - 0.1).toFixed(1);
+     }
+    }
+</script>
+</html>
+
+                  
