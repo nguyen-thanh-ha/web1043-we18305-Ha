@@ -16,13 +16,13 @@
           <p>FPT <span>FOLYTECHNIC</span></p>
           <ul>
             
-           <li><a href="">Trang chủ</a></li>
-            <li><a href="">Giới Thiệu</a></li>
-            <li><a href="">Khóa Học</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Liên Hệ</a></li>
+           <li><a href="#">Trang chủ</a></li>
+            <li><a href="#gioithieu">Giới Thiệu</a></li>
+            <li><a href="#khoahoc">Khóa Học</a></li>
+            <li><a href="#Blog">Blog</a></li>
+            <li><a href="#LH">Liên Hệ</a></li>
           </ul>
-          <i class="fas fa-bars"></i>
+          <i id="fas" class="fas fa-bars"></i>
         </div>
       </div>
     </div>
@@ -33,12 +33,13 @@
       <h1>Trường Cao Đẳng Thực Học - Thực Nghiệp</h1>
       <p>Hãy đến với chúng tôi để trải nghiệm nền giáo dục đặc biệt tạo nên sự khác biệt</p>
       <button>Đăng Ký</button>
+      
     </div>
   </header>
     <!-- --------------course----------------- -->
 <section class="course">
       <h1>Những Khóa Học Cho Bạn</h1>
-      <div class="course-items container row">
+      <div id="khoahoc" class="course-items container row">
         <div class="course-item ">
           <h2>Html, Css</h2>
           <p>HTMl là một ngôn ngữ đánh dấu được thiết kế để tạo nên các trang web trên World Wide Web.HTML là từ viết tắt của Hyper Text Markup Language, được sử dụng để tạo các trang web và ứng dụng web. </p>
@@ -56,7 +57,7 @@
     <!-- -------- -->    
     <section class="brand">
       <h1>Hệ Thống Của Chúng Tôi</h1>
-      <div class="brand-items container row">
+      <div id="gioithieu" class="brand-items container row">
         <div class="brand-item ">
           <h2>Hà Nội</h2>
           <img src="image/brand1.jpg" alt="">
@@ -92,7 +93,7 @@
     <!-- --------- ----------------->
     <section class="test">
       <h1>Cảm nhận học viên</h1>
-      <div class="test container row">
+      <div id="blog" class="test container row">
         <div class="test-item row ">
           <img src="image/stu1.jpg" alt="">
           <div class="test-text">
@@ -130,13 +131,47 @@
           </div>
         </div>
         
+            <div class="noi-dung">
+              <div  class="form">
+                  <h2>Đăng Nhập</h2>
+                  <form action="">
+                      <div class="input-form">
+                          <span>Tên Người Dùng</span>
+                          <input type="text" name="">
+                      </div>
+                      <div class="input-form">
+                          <span>Mật Khẩu</span>
+                          <input type="password" name="">
+                      </div>
+                      <div class="nho-dang-nhap">
+                          <label><input type="checkbox" name=""> Nhớ Đăng Nhập</label>
+                      </div>
+                      <div class="input-form">
+                          <input type="submit" value="Đăng Nhập">
+                      </div>
+                      <div class="input-form">
+                          <p>Bạn Chưa Có Tài Khoản? <a href="#">Đăng Ký</a></p>
+                      </div>
+                  </form>
+                  <h3>Đăng Nhập Bằng Mạng Xã Hội</h3>
+                  <ul class="icon-dang-nhap">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram-square"></i>
+                  </ul>
+              </div>
+          </div>
+          
+        </div>
+        
       </div>
     </section>
     <!------------------------------------->
-    <section class="name">
+    <section id="LH" class="name">
       <p>Hãy nhanh liên hệ với chúng tôi</p>
       <button>liên Hệ</button>
     </section>
+   
      <!------------------------------------->
      <footer class = "footer">
       <h1>Về Chúng Tôi</h1>
